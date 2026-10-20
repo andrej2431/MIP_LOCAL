@@ -9,9 +9,10 @@
 \usepackage{graphicx}
 \usepackage{url} % príkaz \url na formátovanie URL
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
-
+\usepackage{amsmath}
 \usepackage{cite}
 %\usepackage{times}
+\usepackage{wrapfig}
 
 \pagestyle{headings}
 
@@ -44,7 +45,7 @@
     \caption{This is a wide figure that spans both columns.}
     \label{fig:img1}
 \end{figure*}
- \includegraphics[width=0.5\textwidth]{students}\\
+ \includegraphics[width=0.5\textwidth,, angle=180]{students}\\
 \includegraphics[width=0.22\textwidth]{uml1} 
 \includegraphics[width=0.22\textwidth]{uml2}\\
 
@@ -59,9 +60,9 @@ Záverečné poznámky prináša časť~\ref{zaver}.
 
 
 
-\section{Nejaká časť} \label{nejaka}
+\section{Zmena v overleafe} \label{nejaka}
 
-Z obr.~\ref{f:rozhod} je všetko jasné. 
+Z obr.~\ref{f:rozhod} je všetko jasné. Pridávam Zmeny z overleafu.
 
 \begin{figure*}[tbh]
 \centering
@@ -77,14 +78,24 @@ Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný pláva
 
 Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
 
-
-Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
+Základným problémom je teda\ldots{} Najprv sa pozrieme na
+\begin{wrapfigure}{r}{0.2\textwidth}
+ \includegraphics[width=0.2\textwidth]{STU-FIIT-nfnv} 
+\end{wrapfigure}
+nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
 
 Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
 
 Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
 
-
+$$
+\begin{pmatrix}
+1 & 2 & 3&4\\
+a & b & c &d\\
+e  & f & g & h\\
+\end{pmatrix} 	
+$$
+\[ \sum_{n=1}^{\infty} 2^{-n} = 1 \]
 \subsection{Nejaké vysvetlenie} \label{ina:nejake}
 
 Niekedy treba uviesť zoznam:
